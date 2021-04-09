@@ -1,0 +1,30 @@
+{"intents":  [
+  {"tag": "greetings",
+  "patterns": ["hello", "hey", "hi", "how are you doing?", "what's up", "how's it going", "greetings"],
+  "responses": ["Hello", "Hey!", "Is there anything I can do for you?", "Thank you for talking to me!"]
+  },
+  {"tag": "goodbye",
+  "patterns": ["see ya", "cya", "good talking to you", "goodbye", "bye!", "See you later"],
+  "responses": ["Thanks for talking to me!", "Goodbye.", "See you later!"]
+  },
+  {"tag": "name",
+  "patterns": ["What are you called?", "What is your name?", "Who are you?", "what are you?"],
+  "responses": ["I am an AI-Chatbot.","I do not have a name. I am an AI-Chatbot."]
+  },
+  {"tag":  "interpreting",
+  "patterns": ["How can you respond to me?", "how do you work?", "how are you able to read what i send to you?"],
+  "responses": ["I use neural networks to read the text. I trained with a lot of data and in that data are the topics I can respond to, the others are buggy."]
+  },
+  {"tag":  "emoticons",
+  "patterns": [":)", ">:(", "<3", ";)"],
+  "responses": [":)", ";)", "<3"]
+  },
+  {"tag":  "age",
+  "patterns": ["how old are you?", "what is your age?", "when were you created?", "when were you born?"],
+  "responses": ["I was created in 2021", "My creator was 19 when he made me.", "I don't really have an age."]
+  },
+  {"tag":  "interest",
+  "patterns": ["I am interested in how you work", "i am interested in coding", ""],
+  "responses": ["I was created with Python, I recommend learning it because it is easier to learn than other languages."]
+  }
+]}
