@@ -1,15 +1,21 @@
-# AI-Chatbot-Python
- 
-Step 1:
-Create training so that the Chatbot can learn from existing sentences/text.
-    Use tflearn with varying interations to learn from the given .json file.
+# AI-Chatbot-Python Version 0.1.4
 
-Step 2:
-use the training in order to have the Chatbot respond with high probability.
-    for right now a lot of topics will not have the "correct" response.
+Creator: Noah Wood
+noahdanielwood@gmail.com
 
-Step 3:
-Create a GUI for the Chatbot so that it works outside of the command prompt/IDE.
+uses the following modules:
 
-Step 4:
-Figure out a way to supply more text to the training so that the Chatbot can respond and correctly recognize more question and text.
+nltk
+numpy
+tflearn
+tensorflow
+random
+json
+pickle
+
+To retrain the chatbot:
+1. delete .pickle file
+2. uncomment the 'x' in try: so that the old data is not used
+3. run once (it probably will fail)
+4. run again and it should show the new training trials
+5. recomment the 'x' so it does not retrain each time it is run

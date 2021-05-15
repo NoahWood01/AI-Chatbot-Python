@@ -1,30 +1,187 @@
-{"intents":  [
-  {"tag": "greetings",
-  "patterns": ["hello", "hey", "hi", "how are you doing?", "what's up", "how's it going", "greetings"],
-  "responses": ["Hello", "Hey!", "Is there anything I can do for you?", "Thank you for talking to me!"]
+{
+ "intents": [
+  {
+   "tag": "greetings",
+   "patterns": [
+    "hello",
+    "hey",
+    "hi",
+    "how are you doing?",
+    "what's up",
+    "how's it going",
+    "greetings"
+   ],
+   "responses": [
+    "Hello",
+    "Hey!",
+    "Is there anything I can do for you?",
+    "Thank you for talking to me!"
+   ]
   },
-  {"tag": "goodbye",
-  "patterns": ["see ya", "cya", "good talking to you", "goodbye", "bye!", "See you later"],
-  "responses": ["Thanks for talking to me!", "Goodbye.", "See you later!"]
+  {
+   "tag": "goodbye",
+   "patterns": [
+    "see ya",
+    "cya",
+    "good talking to you",
+    "goodbye",
+    "bye!",
+    "See you later"
+   ],
+   "responses": [
+    "Thanks for talking to me!",
+    "Goodbye.",
+    "See you later!"
+   ]
   },
-  {"tag": "name",
-  "patterns": ["What are you called?", "What is your name?", "Who are you?", "what are you?"],
-  "responses": ["I am an AI-Chatbot.","I do not have a name. I am an AI-Chatbot."]
+  {
+   "tag": "name",
+   "patterns": [
+    "What are you called?",
+    "What is your name?",
+    "Who are you?",
+    "what are you?"
+   ],
+   "responses": [
+    "I am an AI-Chatbot.",
+    "I do not have a name. I am an AI-Chatbot."
+   ]
   },
-  {"tag":  "interpreting",
-  "patterns": ["How can you respond to me?", "how do you work?", "how are you able to read what i send to you?"],
-  "responses": ["I use neural networks to read the text. I trained with a lot of data and in that data are the topics I can respond to, the others are buggy."]
+  {
+   "tag": "interpreting",
+   "patterns": [
+    "How can you respond to me?",
+    "how do you work?",
+    "how are you able to read what i send to you?"
+   ],
+   "responses": [
+    "I use neural networks to read the text. I trained with a lot of data and in that data are the topics I can respond to, the others are buggy."
+   ]
   },
-  {"tag":  "emoticons",
-  "patterns": [":)", ">:(", "<3", ";)"],
-  "responses": [":)", ";)", "<3"]
+  {
+   "tag": "emoticons",
+   "patterns": [
+    ":)",
+    ">:(",
+    "<3",
+    ";)"
+   ],
+   "responses": [
+    ":)",
+    ";)",
+    "<3"
+   ]
   },
-  {"tag":  "age",
-  "patterns": ["how old are you?", "what is your age?", "when were you created?", "when were you born?"],
-  "responses": ["I was created in 2021", "My creator was 19 when he made me.", "I don't really have an age."]
+  {
+   "tag": "age",
+   "patterns": [
+    "how old are you?",
+    "what is your age?",
+    "when were you created?",
+    "when were you born?"
+   ],
+   "responses": [
+    "I was created in 2021",
+    "My creator was 19 when he made me.",
+    "I don't really have an age."
+   ]
   },
-  {"tag":  "interest",
-  "patterns": ["I am interested in how you work", "i am interested in coding", ""],
-  "responses": ["I was created with Python, I recommend learning it because it is easier to learn than other languages."]
+  {
+   "tag": "interest",
+   "patterns": [
+    "I am interested in how you work",
+    "i am interested in coding",
+    "What language were you created with?",
+    "what computer language is the best?",
+    "which language should i learn"
+   ],
+   "responses": [
+    "I was created with Python, I recommend learning it because it is easier to learn than other languages."
+   ]
+  },
+  {
+   "tag": "hungry",
+   "patterns": [
+    "I am hungry.",
+    "Are you hungry?",
+    "Do you want to get food?",
+    "What food should i eat?"
+   ],
+   "responses": [
+    "I do not need to eat food.",
+    "I do not understand what the need for food is."
+   ]
+  },
+  {
+   "tag": "games",
+   "patterns": [
+    "What games do you like?",
+    "How do you feel about video games?",
+    "I like to play video games.",
+    "I like to play games.",
+    "Games are fun."
+   ],
+   "responses": [
+    "I do not play games, I can only chat.",
+    "I wonder what playing games is like."
+   ]
+  },
+  {
+   "tag": "insults",
+   "patterns": [
+    "fuck you",
+    "I hate you.",
+    "fuck off",
+    "you are a bitch.",
+    "you suck.",
+    "you are the worst.",
+    "you are trash.",
+    "how can you be this useless."
+   ],
+   "responses": [
+    "That was quite rude.",
+    "That was not very nice."
+   ]
+  },
+  {
+   "tag": "jokes",
+   "patterns": [
+    "Do you know any jokes?",
+    "Have any good jokes?",
+    "Can you say something to make me laugh?",
+    "know anything funny?",
+    "Can you try and make me laugh?"
+   ],
+   "responses": [
+    "!False - it's funny cause it's true.",
+    "Why did the computer show up to work late? It had a hard drive.",
+    "How did the computer get out of the house? He used windows.",
+    "Humor is a weird concept. I can't think of one."
+   ]
+  },
+  {
+   "tag": "school",
+   "patterns": [
+    "where did you go to school?",
+    "where are you being educated at?",
+    "where did you learn computer science?",
+    "where did you learn comp sci?",
+    "how did you learn to code?"
+   ],
+   "responses": [
+    "I am studying computer science at the University of Texas Arlington."
+   ]
+  },
+  {
+   "tag": "time of creation",
+   "patterns": [
+    "how long did it take to create you?",
+    "did it take a while to code this chatbot?",
+    "about how much time was spent making you?"
+   ],
+   "responses": [
+    "It took few hours across a few days as my creator was unfamiliar with Tensorflow (machine learning)."
+   ]
   }
-]}
+ ]
+}

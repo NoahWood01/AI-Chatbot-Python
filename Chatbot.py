@@ -1,3 +1,5 @@
+#AI chatbot with neural network learning via tflearn
+
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
@@ -15,6 +17,8 @@ with open("intents.json") as file:
 
 #when retraining might need to alter this code so it doesnt load the old one
 try:
+    #delete .pickle file to retrain and uncomment a below section labeled.
+    #some error may occur with this, may have to run once, fail then run again and work
     with open("data.pickle","rb") as f:
         words, labels, training, output = pickle.load(f)
 except:
@@ -80,10 +84,12 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 
 try:
+    #uncomment this 'x' when retraining
+    #x
     model.load("model.tflearn")
 except:
-    #n_epoch is now much the machine learns (1000 times)
-    model.fit(training, output, n_epoch=1000, batch1_size=8, show_metric=True)
+    #n_epoch is now much the machine learns
+    model.fit(training, output, n_epoch=1500, batch_size=8, show_metric=True)
     model.save("model.tflearn")
 
 def bag_of_words(s, words):
